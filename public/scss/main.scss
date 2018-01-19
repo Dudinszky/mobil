@@ -1,0 +1,126 @@
+@import 'base/base';
+@import 'base/reset';
+@import 'base/fonts';
+
+@import 'utilities/mixins';
+
+@import "base/media";
+
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  background: #383d3f;
+  height: 37px;
+
+  .nav-header {
+    float: left;
+    padding: 4px 0 4px 20px;
+    color: #ebebeb;
+    font-family: 'montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .sidebar-btn {
+    float: right;
+    width: 40px;
+    height: 37px;
+    background: #202529;
+    padding: 11px;
+    cursor: pointer;
+
+    .sidebar-btn_hamburger {
+      width: 18px;
+      height: 2px;
+      background: #ffffff;
+      float: left;
+      position: relative;
+
+      &:before {
+        content: ("");
+        position: absolute;
+        top: 5px;
+        width: 18px;
+        height: 2px;
+        background: #ffffff;
+      }
+
+      &:after {
+        content: ("");
+        position: absolute;
+        top: 10px;
+        width: 18px;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
+  }
+}
+
+.nav-bar {
+  padding-top: 30px;
+  float: right;
+  background: #383d3f;
+  width: 100%;
+  .nav-list {
+
+    .nav-item {
+      text-align: center;
+      display: block;
+      padding: 15px;
+      border-bottom: 1px solid #ebebeb;
+      cursor: pointer;
+    &.b-b {
+      border-bottom: none;
+    }
+    }
+    .nav-link {
+      color: #ebebeb;
+      font-family: 'montserrat';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 1.5px;
+    }
+  }
+}
+
+.main-banner {
+  display: block;
+  width: 100%;
+  background: #1a91a7;
+  text-align: left;
+  padding-left: 20px;
+
+  .main-banner_header {
+    color: #ffffff;
+    font-family: 'montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 60px 0 0 0;
+  }
+
+  .main-banner_link {
+    float: left;
+    color: #b3d9e0;
+    font-family: 'montserrat';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 65px;
+    padding: 0 0 50px 0;
+  }
+}
