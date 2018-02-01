@@ -1,44 +1,10 @@
-@mixin MiniFont {
-  font-family: "RegularWeb";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  letter-spacing: 0.36px;
-  margin: 0;
-}
-
-@mixin BigFont {
-  font-family: "RegularWeb";
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 29.91px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin: 0;
-}
-
-@mixin BigBoxFont {
-  font-family: "RegularWeb";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-  letter-spacing: 0.48px;
-}
-
-@mixin MiniBoxFont {
-  font-family: "RegularWeb";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
-
-@mixin UnderLine {
-  text-align: center;
-  display: inline-block;
-  width: 87px;
-  height: 4px;
-  background-color: #000000;
-  opacity: 0.15;
+@mixin clearF {
+  .clearfix {
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
 }

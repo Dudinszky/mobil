@@ -1,0 +1,43 @@
+section {
+  min-width: 540px;
+  margin: 40px;
+  float: right;
+  overflow: auto;
+}
+
+.section_slider-inner {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  padding: 5px;
+  border: #666 solid 2px;
+  
+  img {
+    display: none;
+    width: 500px;
+    height: 350px;
+  }
+  .active {
+    display: inline-block;
+  }
+}
+
+.prev,.next {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  cursor: pointer;
+}
+
+.prev {
+  position: relative;
+  top: 300px;
+  z-index: 100;
+}
+
+.next {
+  z-index: 100;
+  position: relative;
+}
