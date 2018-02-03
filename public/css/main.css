@@ -1,21 +1,28 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 section {
-  min-width: 540px;
-  margin: 40px;
-  float: right;
-  overflow: auto; }
+  width: 1000px;
+  background: #2f4051; }
+
+.section_info {
+  float: left;
+  width: 300px; }
 
 .section_slider-inner {
-  width: 500px;
-  height: 350px;
+  width: 660px;
+  height: 450px;
   position: relative;
   overflow: hidden;
-  float: left;
+  float: right;
   padding: 5px;
   border: #666 solid 2px; }
   .section_slider-inner img {
     display: none;
-    width: 500px;
-    height: 350px; }
+    width: 660px;
+    height: 450px; }
   .section_slider-inner .active {
     display: inline-block; }
 
@@ -33,6 +40,41 @@ section {
 .next {
   z-index: 100;
   position: relative; }
+
+article {
+  width: 1000px;
+  float: left; }
+
+.article_slider-inner {
+  width: 1000px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  float: right;
+  padding: 25px;
+  border: #666 solid 2px; }
+  .article_slider-inner p {
+    display: none;
+    width: 760px;
+    height: 450px; }
+  .article_slider-inner .active {
+    display: inline-block; }
+
+.previous, .other {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  cursor: pointer; }
+
+.previous {
+  position: relative;
+  top: 100px;
+  z-index: 100; }
+
+.other {
+  z-index: 100;
+  position: relative;
+  top: 100px; }
 
 * {
   box-sizing: border-box; }

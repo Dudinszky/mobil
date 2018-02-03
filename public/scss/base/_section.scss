@@ -1,23 +1,37 @@
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
 section {
-  min-width: 540px;
-  margin: 40px;
-  float: right;
-  overflow: auto;
+  width: 1000px;
+  //overflow: auto;
+  background: #2f4051;
+}
+
+.section_info {
+  float: left;
+  width: 300px;
 }
 
 .section_slider-inner {
-  width: 500px;
-  height: 350px;
+  width: 660px;
+  height: 450px;
   position: relative;
   overflow: hidden;
-  float: left;
+  float: right;
   padding: 5px;
   border: #666 solid 2px;
   
   img {
     display: none;
-    width: 500px;
-    height: 350px;
+    width: 660px;
+    height: 450px;
   }
   .active {
     display: inline-block;

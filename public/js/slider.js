@@ -19,3 +19,27 @@ $(document).ready(function(){
         }
     });
 });
+
+// SECOND
+
+$(document).ready(function(){
+    $('.other').on('click', function(){
+        var currentP = $('.active');
+        var nextP = currentP.other();
+
+        if(nextP.length){
+            currentP.removeClass('active').css('z-index', -10);
+            nextP.addClass('active').css('z-index', 10);
+        }
+    });
+
+    $('.previous').on('click', function(){
+        var currentP = $('.active');
+        var prevP = currentP.previous();
+
+        if(prevP.length){
+            currentP.removeClass('active').css('z-index', -10);
+            prevP.addClass('active').css('z-index', 10);
+        }
+    });
+});

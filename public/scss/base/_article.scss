@@ -1,0 +1,46 @@
+article {
+  width: 1000px;
+  //overflow: auto;
+  float: left;
+}
+
+.article_slider {
+}
+
+.article_slider-inner {
+  width: 1000px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  float: right;
+  padding: 25px;
+  border: #666 solid 2px;
+
+  p {
+    display: none;
+    width: 760px;
+    height: 450px;
+  }
+  .active {
+    display: inline-block;
+  }
+}
+
+.previous,.other {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  cursor: pointer;
+}
+
+.previous {
+  position: relative;
+  top: 100px;
+  z-index: 100;
+}
+
+.other {
+  z-index: 100;
+  position: relative;
+  top: 100px;
+}
